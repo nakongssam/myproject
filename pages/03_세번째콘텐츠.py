@@ -2,8 +2,8 @@ import streamlit as st
 st.subheader('세번째 콘텐츠')
 
 name = st.text_input('Name:')
-age = st.number_input('Age:', min=1, max=100, step=1)
-email = st.text_ipnut('Email:')
+age = st.number_input('Age:', min_value=1, maxvalue=100, step=1)
+email = st.text_input('Email:')
 
 if st.button('방명록에 추가하기'):
     if all ([name,age,email]):
